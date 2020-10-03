@@ -1,0 +1,25 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+#background{
+    background-image: url("./pictures/background.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+#gameContainer {
+    position: relative;
+    margin:auto;
+    top:689px;
+    width: 80%; 
+    height: 60px;
+    background-image: url("./pictures/Capture.JPG");
+}
+img {
+    height: 70px;
+    position: absolute;
+    bottom: 60px; 
+}
