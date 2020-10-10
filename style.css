@@ -23,11 +23,58 @@ body, html {
     position: relative;
     margin:auto; 
     height: 60px;
-    top:350px;
+    top:120px;
     background-image: url("./pictures/Capture.JPG");
 }
 img {
     height: 70px;
     position: absolute;
     top:290px;
+}
+#flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+.obstacle {
+    background: url("./pictures/Obstacles.JPG");
+    height: 70px;
+    width: 9%;
+    position:relative;
+    top:280px;
+}
+#obstacle1 {
+    margin-left: 200px;
+}
+#obstacle2 {
+    margin-left: 350px;
+}
+#obstacle3 {
+    margin-left: 100px;
+}
+#flexContainer2 {
+    display: flex;
+    flex-direction: row;
+}
+.obstacle2 {
+    background: url("./pictures/Ostacle\ 2.JPG");
+    height: 60px;
+    width: 9%;
+    position:relative;
+    top:150px;
+}
+#obstacle4 {
+    margin-left: 340px;
+}
+#obstacle5 {
+    margin-left: 290px;
+}
+#obstacle6 {
+    background: url("./pictures/Obstacle\ 3.JPG");
+    height: 100px;
+    width:55px;
+    background-repeat: no-repeat;
+    position:relative;
+    background-size:cover;
+    top:120px;
+    margin-left: 460px;
 }
