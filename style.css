@@ -26,10 +26,12 @@ body, html {
     top:120px;
     background-image: url("./pictures/Capture.JPG");
 }
-img {
+#player {
     height: 70px;
+    width: 70px;
     position: absolute;
-    top:290px;
+    top: 290px;
+    left: 1px;
 }
 #flexContainer {
     display: flex;
@@ -77,4 +79,31 @@ img {
     background-size:cover;
     top:120px;
     margin-left: 460px;
+}
+#playersLifeContainer {
+    display:flex;
+    flex-direction: row;
+    position:relative;
+    bottom: 350px;
+}
+#playersLifeContainer img {
+    height: 40px;
+}
+#livesLeft {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(1 148 1);
+    margin-left: 10px;
+}
+#gameStatus {
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+    margin-left: 300px;
+    margin-top: 150px;
+}
+#retryButton {
+    display: none;
+    margin-left: 20px;
+    margin-top: 150px;
 }
