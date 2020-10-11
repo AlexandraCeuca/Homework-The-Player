@@ -124,8 +124,6 @@ function giveItATry() {
 function checkObstaclesOzizontaly(positionX, positionY) {
     positionX = parseInt(positionX);
     positionY = parseInt(positionY);
-    console.log(positionX);
-    console.log(positionY);
     if(positionY > 291 || positionY < 0) {
         return false;
     }
