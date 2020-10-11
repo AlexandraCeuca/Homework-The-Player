@@ -7,13 +7,22 @@ class Player {
     this.liveElement = document.getElementById("livesLeft");
     this.player = document.getElementById("player");
     this.listener = (event) => this.handlePlayerMovement(event);
-    document.addEventListener('keyup', this.listener );
-    this.player.style.left = "1px";
-    this.player.style.top = "290px";
-    this.player.src= "./pictures/marathon.png";
-    this.liveElement.style.color="rgb(1 148 1)";
     
+    this.initializeItems();
+    this.initializePlayer();
     this.setLives();
+    }
+
+    initializeItems() {
+        document.addEventListener('keyup', this.listener );
+        this.liveElement.style.color="rgb(1 148 1)";
+    }
+
+    initializePlayer() { 
+        this.player.style.left = "1px";
+        this.player.style.top = "290px";
+        this.player.src= "./pictures/marathon.png";
+        this.player.style.transform="scaleX(1)";
     }
 
     setLives() {
@@ -86,6 +95,7 @@ class Player {
         this.changePlayerStatus(false);
         document.removeEventListener('keyup', this.listener);
     }
+    
     setStatusBeforError(lastPositionX, lastPositionY) {
         if(this.checkGameStatus()) {
             this.changePlayerStatus(true);
@@ -105,6 +115,7 @@ class Player {
         return true;
     }
 }
+
 function giveItATry() {
     let playerObject = new Player();
     hideRetry();
@@ -141,13 +152,14 @@ function checkObstaclesOzizontaly(positionX, positionY) {
     if (positionY > 190 & positionX > 421 && positionX < 501) {
         return false;
     }
-
         return true;
+
 }
 function showRetry() {
     gameStatus.style.display = "block";
     button.style.display = "block";
 }
+
 function hideRetry() {
     gameStatus.style.display = "none";
     button.style.display = "none";
